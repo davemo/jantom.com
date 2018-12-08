@@ -39,7 +39,9 @@
     <link rel="shortcut icon" href="dist/img/icons/favicon.ico">
     <link rel="icon" type="image/png" sizes="64x64" href="dist/img/icons/favicon.png">
     <link hreflang="en" href="index.html">
-    <script>G.D.GOOGLE_MAPS_API_KEY = "AIzaSyAk9mQ_QgGW8bdKget1-9ZWLuZtKRlKL5M"</script>
+    <script>
+    G.D.GOOGLE_MAPS_API_KEY = "AIzaSyAk9mQ_QgGW8bdKget1-9ZWLuZtKRlKL5M"
+    </script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -101,8 +103,7 @@
                 <nav class="w-nav--primary  hidden--small hidden--print" role="navigation" aria-label="Primary Navigation">
                     <ul class='nav nav--primary' itemscope="itemscope" itemtype="../schema.org/SiteNavigationElement.html">
                         <li class="clickable  unselectable nav--primary__home current-page"><a href="index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Home</span></a></li>
-                        <li class="clickable  unselectable"><a href="vehicles/index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Showroom</span></a></li>
-                        <li class="clickable  unselectable"><a href="vehicle-finder/index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Vehicle Locator</span></a></li>
+                        <li class="clickable  unselectable"><a href="/#featured-vehicles" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Showroom</span></a></li>
                         <li class="clickable  unselectable"><a href="financing/index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Finance</span></a></li>
                         <li class="flyout js-flyout--click unselectable"><span class="nav--primary__parent nav--primary__parent--nonlink" itemprop="name">About
       <i class="icon--chevron-down hidden--small push-quarter--left"><span class="a11y">Down Icon</span></i></span>
@@ -137,97 +138,15 @@
       </h2>
                     </div>
                 </div>
-                <div class="w-search-widget container--grey soft">
-                    <div class="l-row section hard">
-                        <div class="l-column w-search__meta flush--bottom">
-                            <div class="section__title--group">
-                                <h2 class="epsilon w-search__title flush section__title">Search Our Inventory</h2>
-                                <a href="vehicles/index.html" class="button button--black button--round button--shadowed">View All Inventory</a>
-                            </div>
-                        </div><!-- column -->
-                    </div><!-- row -->
-                    <div class="l-row">
-                        <!-- SEARCH FORM -->
-                        <form name="" method="get" action="https://www.jantom.com/vehicles">
-                            <div class="w-text-input  align--center">
-                                <legend class="a11y">Year</legend>
-                                <div class="l-column--medium-4 l-column--large-2"><label class="full"><span class="a11y">Year Min:</span>
-                                        <div><select id="year_start" name="year_start">
-                                                <option value="">No Minimum</option>
-                                                <option value="2009">2009</option>
-                                                <option value="2008">2008</option>
-                                                <option value="2006">2006</option>
-                                                <option value="2004">2004</option>
-                                                <option value="2002">2002</option>
-                                            </select></div></label></div>
-                                <div class="l-column--medium-4 l-column--large-2"><label class="full"><span class="a11y">Year Max:</span>
-                                        <div><select id="year_end" name="year_end">
-                                                <option value="">No Maximum</option>
-                                                <option value="2009">2009</option>
-                                                <option value="2008">2008</option>
-                                                <option value="2006">2006</option>
-                                                <option value="2004">2004</option>
-                                                <option value="2002">2002</option>
-                                            </select></div></label></div>
-                                <div class="l-column--medium-4 l-column--large-2">
-                                    <legend class="a11y">Vehicle</legend><label class="full"><span class="a11y">Body Style:</span>
-                                        <div><select id="category" name="category">
-                                                <option value="">All Types</option>
-                                                <option value="20|1|2|3|4|5|6|7|8|15|9">Passenger Vehicle (5)</option>
-                                                <option value="5">- Sedan (3)</option>
-                                                <option value="8">- Wagon (2)</option>
-                                            </select></div></label>
-                                </div>
-                                <div class="l-column--medium-4 l-column--large-2"><label class="full"><span class="a11y">Make:</span>
-                                        <div><select id="make_name" name="make_name" name="make_name">
-                                                <option value="">All Makes</option>
-                                                <option value="chevrolet">Chevrolet (1)</option>
-                                                <option value="ford">Ford (1)</option>
-                                                <option value="hyundai">Hyundai (2)</option>
-                                                <option value="mazda">Mazda (1)</option>
-                                            </select></div></label></div>
-                                <div class="l-column--medium-4 l-column--large-2"><label class="full"><span class="a11y">Model:</span>
-                                        <div><select id="model_name" name="model_name">
-                                                <option value="">All Models</option>
-                                                <option value="elantra">Elantra (1)</option>
-                                                <option value="fusion">Fusion (1)</option>
-                                                <option value="malibu">Malibu (1)</option>
-                                                <option value="santa fe">Santa Fe (1)</option>
-                                                <option value="tribute">Tribute (1)</option>
-                                            </select></div></label></div>
-                                <div class="l-column--medium-4 l-column--large-2">
-                                    <div><button type="submit" id="refine_search" name="refine_search" class="full  button" style="height: 40px">Search</button></div>
-                                </div>
-                        </form>
-                    </div>
-                </div>
             </div>
             <div class="container--dark-grey">
                 <div class="l-row section">
                     <div class="l-column flush--bottom">
                         <div class="section__title--group">
-                            <h2 class="section__title">Featured Vehicles</h2>
+                            <h2 id="featured-vehicles" class="section__title">Featured Vehicles</h2>
                         </div>
-                        <div id="js-carousel" class="carousel">
-                            <ul class="carousel__list carousel__list--3">
-                                <li>
-                                    <div class="carousel__card">
-                                        <div class="rule--all align--center" itemscope itemtype="../schema.org/Vehicle.html">
-                                            <div class="position--relative"><a class="fit-img fit-img--stretch card__img" href="inventory/2002-mazda-tribute/3059457/index.html" itemprop="url"><img class="js-lazy" src="/images/inventory/30594575f20.jpg?w=640&amp;h=480&amp;q=75&amp;s=95b4f2bf9e968f51b4b740c5c1265315" data-original="https://images.carpages.ca/inventory/3059457.92339497?w=640&amp;h=480&amp;q=75&amp;s=95b4f2bf9e968f51b4b740c5c1265315" alt="2002 Mazda Tribute LX" itemprop="image"><noscript>&lt;img src="https://images.carpages.ca/inventory/3059457.92339497?w=640&amp;h=480&amp;q=75&amp;s=95b4f2bf9e968f51b4b740c5c1265315" alt="2002 Mazda Tribute LX" itemprop="image"&gt;</noscript></a></div>
-                                            <div class="card"><a href="inventory/2002-mazda-tribute/3059457/index.html"><h6 class="card__title truncate flush--bottom" itemprop="name">
-        2002 Mazda Tribute
-      </h6></a><span class="card__details" itemprop="offers" itemscope itemtype="../schema.org/Offer.html"><span class="milli odometer"><span>189,000</span><span>km</span></span><span class="weight--bold price" itemprop="price">                $1,500
-                <span class="milli weight--normal grey price__meta">+ Tax &amp; Lic</span></span></span></div>
-                                            <div class="milli"><a class="button button--primary caps full" href="inventory/2002-mazda-tribute/3059457/index.html">View Vehicle</a></div>
-                                        </div>
-                                    </div><!-- item -->
-                                </li><!-- column -->
-                            </ul><!-- row -->
-                            <ol class="nav nav--carousel soft-half--ends hard--sides flush--sides milli text--light push-half--top rule--top">
-                                <li class="pagination__prev"><span class="button button--white button--round button--shadowed button--prev clickable" data-goto="--">Previous</span></li>
-                                <span class="space"></span>
-                                <li class="pagination__next"><span class="button button--white button--round button--shadowed button--next clickable" data-goto="++">Next</span></li>
-                            </ol>
+                        <div>
+                            <iframe class="airtable-embed" src="https://airtable.com/embed/shrL5PpeAAvDH92vz?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" height="630" style="background: transparent; border: 1px solid #ccc;"></iframe>
                         </div><!-- carousel -->
                     </div>
                 </div>
@@ -259,7 +178,6 @@
                             </div>
                         </div>
                         <div class="align--center align-child-img--center">
-                            <img class="soft" src="dist/img/logo-ucda-shield.png" alt="UCDA Member Logo" style="max-width:200px;"/>
                             <p>For Personal Service, Call Tom at <a class="white weight--bold" href="tel:613-913-8091">613-913-8091</a></p>
                             <a href="contact/index.html" class="button button--large button--shadowed">Request an appointment</a>
                         </div>
@@ -269,9 +187,8 @@
             <div class="bg--red">
                 <div class="l-row section testimonials">
                     <div class="l-column testimonial flush">
-                        <p class="testimonial__content">Jantom Motors was great to work with! They found us the perfect vehicle for our needs and went the extra mile…</p>
+                        <p class="testimonial__content">Tom was great to work with! He found us the perfect vehicle for our needs and went the extra mile…</p>
                         <p class="testimonial__meta">PM, Kemptville</p>
-                        <a class="testimonial__button button--shadowed button--round" href="testimonials/index.html">Read More</a>
                     </div><!-- column -->
                 </div><!-- row -->
             </div>
@@ -302,18 +219,12 @@
                     </div>
                 </ul>
             </div><!-- column -->
-            <div class="t-global-footer-social">
-                <a class="button button--circle button--fb button--no-arrow" href="../www.facebook.com/Jantom-Motor-Product-Sales-169240587835/index.html" target="_blank">
-  <i class="icon--facebook2"><span class="a11y">facebook Icon</span></i>
-</a>
-            </div><!-- column -->
         </div><!-- row -->
     </footer>
     <nav id="menu" class="w-nav--primary--small effect--all  container--grey  clearfix visible--small  hidden--print  soft-half--ends" role="navigation" aria-label="Primary Navigation">
         <ul class='nav nav--primary' itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
             <li class="clickable  unselectable nav--primary__home current-page"><a href="index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Home</span></a></li>
-            <li class="clickable  unselectable"><a href="vehicles/index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Showroom</span></a></li>
-            <li class="clickable  unselectable"><a href="vehicle-finder/index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Vehicle Locator</span></a></li>
+            <li class="clickable  unselectable"><a href="/#featured-vehicles" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Showroom</span></a></li>
             <li class="clickable  unselectable"><a href="financing/index.html" itemprop="url" class="link-decoration--none"><span class="nav--primary__parent" itemprop="name">Finance</span></a></li>
             <li class="flyout js-flyout--click unselectable"><span class="nav--primary__parent nav--primary__parent--nonlink" itemprop="name">About
       <i class="icon--chevron-down hidden--small push-quarter--left"><span class="a11y">Down Icon</span></i></span>
